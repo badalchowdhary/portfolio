@@ -7,7 +7,7 @@ import { BsSunFill } from "react-icons/bs";
 import {AiFillLinkedin, AiFillGithub, AiFillMail, AiOutlineGlobal} from 'react-icons/ai'
 import car from '../public/car.jpg'
 import { useState } from "react";
-import { dark } from "@mui/material/styles/createPalette";
+
 import { projects } from "./data";
 
 
