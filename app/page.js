@@ -75,7 +75,8 @@ export default function Home() {
 
           <div className="lg:flex gap-10">
             {projects.map((item) => (
-              <div className=" text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
+              <div key={item.id}>
+                <div className=" text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
               <Image src={car} width={100} height={100} />
               <h3 className=" text-lg font-medium pt-8 pb-2 text-teal-600">{item.title}</h3>
               <p className="py-3">
@@ -92,6 +93,7 @@ export default function Home() {
                 </a>}
               </div>
             </div>
+              </div>
             ))}
           </div>
         </section>
