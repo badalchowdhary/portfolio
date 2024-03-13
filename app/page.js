@@ -49,7 +49,7 @@ export default function Home() {
               {/* <AiFillGithub/>
               <AiFillLinkedin/>
               <AiFillMail/> */}
-              <a href="https://drive.google.com/file/d/1oXpuSl9cER6oEJxzJDwgajwM1SMC7doZ/view?usp=sharing" target="blank" className=" bg-cyan-500 text-white px-2 py-2 rounded-md ml-8">
+              <a href="https://drive.google.com/file/d/1AEMWYrzNnD3k_7sBgMhQQAev846j_04H/view?usp=sharing" target="blank" className=" bg-cyan-500 text-white px-2 py-2 rounded-md ml-8">
                 Resume
               </a>
               <a href="https://drive.google.com/file/d/1oXpuSl9cER6oEJxzJDwgajwM1SMC7doZ/view?usp=sharing" target="blank" className=" bg-cyan-500 text-white px-4 py-2 rounded-md ml-8">
