@@ -1,113 +1,148 @@
+"use client"
+
 import Image from "next/image";
+import Head from "next/head";
+import {BsFillMoonStarsFill} from 'react-icons/bs'
+import { BsSunFill } from "react-icons/bs";
+import {AiFillLinkedin, AiFillGithub, AiFillMail, AiOutlineGlobal} from 'react-icons/ai'
+import car from '../public/car.jpg'
+import { useState } from "react";
+import { dark } from "@mui/material/styles/createPalette";
+import { projects } from "./data";
+
 
 export default function Home() {
+  const[darkMode, setDarkMode] = useState(false);
+
+  const handleClick = () => {
+    setDarkMode(!darkMode);
+  }
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className={darkMode ? "dark":""}>
+      <Head>
+        <title>Badal Chowdhary</title>
+      </Head>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <main className=" bg-white px-10 md:px20 lg:px-40 dark:bg-gray-900">
+        {/* header */}
+        <section className=" min-h-screen">
+          <nav className=" py-10 mb-12 flex justify-between">
+            <h1 className=" text-xl font-burtons dark:text-gray-200">Badal Chowdhary</h1>
+            <ul className="flex justify-center">
+              <li className="dark:text-gray-200">
+                {darkMode? <BsSunFill onClick={handleClick} className=" cursor-pointer text-2xl"/> : <BsFillMoonStarsFill onClick={handleClick} className=" cursor-pointer text-2xl"/>}
+              </li>
+              <li>
+                
+              </li>
+            </ul>
+          </nav>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <div className=" text-center p-5 md:p-10">
+            <h2 className=" text-4xl mt-1 py-3 text-cyan-800 font-medium md:text-6xl md:mt-28">Badal Chowdhary</h2>
+            <h3 className=" text-md py-2 md:text-2xl dark:text-gray-200">Software Engineer Fresher</h3>
+            <p className=" text-sm md:text-md py-5 leading-8 text-gray-800 md:text-xl max-w-2xl mx-auto dark:text-gray-200">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quaerat aut delectus tempora sit labore? Doloremque cumque odio pariatur explicabo iusto debitis? Omnis possimus laboriosam rem rerum nesciunt consectetur odio.
+            </p>
+            
+            <div className=" text-l flex justify-center py-3 text-cyan-800 dark:text-gray-200 md:text-3xl md:gap-8">
+              {/* <AiFillGithub/>
+              <AiFillLinkedin/>
+              <AiFillMail/> */}
+              <a href="https://drive.google.com/file/d/1oXpuSl9cER6oEJxzJDwgajwM1SMC7doZ/view?usp=sharing" target="blank" className=" bg-cyan-500 text-white px-2 py-2 rounded-md ml-8">
+                Resume
+              </a>
+              <a href="https://drive.google.com/file/d/1oXpuSl9cER6oEJxzJDwgajwM1SMC7doZ/view?usp=sharing" target="blank" className=" bg-cyan-500 text-white px-4 py-2 rounded-md ml-8">
+                Connect
+            </a>
+            </div>
+          </div>
+          
+          {/* <div className=" relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+            <Image src={profile} layout="fill" objectFit="cover"/>
+          </div> */}
+        </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          {/* Projects */}
+        <section>
+          <div>
+            <h3 className=" text-3xl py-1 dark:text-gray-200">Projects</h3>
+            <p className=" text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              <span className=" text-teal-500"> Highlight </span>Laboriosam commodi optio pariatur maiores adipisci necessitatibus nemo labore nesciunt esse architecto eveniet sequi non iure natus mollitia voluptate, et id veniam.
+            </p>
+          </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+          <div className="lg:flex gap-10">
+            {projects.map((item) => (
+              <div className=" text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
+              <Image src={car} width={100} height={100} />
+              <h3 className=" text-lg font-medium pt-8 pb-2 text-teal-600">{item.title}</h3>
+              <p className="py-3">
+                {item.desc}
+              </p>
+              <span className=" py-4 text-teal-600">Tech Stack : </span>
+              <span>{item.stack}</span>
+              <div className=" text-3xl flex justify-center gap-10 py-5 text-gray-600">
+                <a href={item.githubLink} target="_blank" rel="noopener noreferrer">
+                  <AiFillGithub />
+                </a>
+                {item.webLink && <a href={item.webLink} target="_blank" rel="noopener noreferrer">
+                  <AiOutlineGlobal />
+                </a>}
+              </div>
+            </div>
+            ))}
+          </div>
+        </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        {/* Experience  and Education*/}
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800">
+              Lorem ipsum dolor sit amet <span className=" text-teal-500"> ABCD </span>consectetur, adipisicing elit. Sed quaerat cum rem at! Reprehenderit provident earum adipisci temporibus quidem accusamus magnam laudantium, animi consequatur molestias, odit beatae quae cumque minima?
+            </p>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className=" basis-1/3 flex-1">
+              <Image src={car} className="rounded-lg object-cover" width={'100'} height={'100%'} layout="responsive"/>
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <Image src={car} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <Image src={car} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <Image src={car} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <Image src={car} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
+            </div>
+            <div className=" basis-1/3 flex-1">
+              <Image src={car} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
+            </div>
+          </div>
+        </section>
+
+       {/* Footer */}
+      </main>
+      <section className=" bg-teal-600">
+          <nav className=" p-10 flex justify-between">
+            <h1 className=" text-xl font-burtons dark:text-gray-200">Badal Chowdhary</h1>
+            <ul className="flex justify-center">
+              <li className="dark:text-gray-200">
+                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl"/>
+              </li>
+              <li>
+                <a href="#" className=" bg-cyan-500 text-white px-4 py-2 rounded-md ml-8">
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
+          </section>
+    </div>
   );
 }
