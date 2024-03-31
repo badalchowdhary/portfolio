@@ -45,7 +45,7 @@ export default function Home() {
             <h2 className=" text-4xl mt-1 py-3 text-cyan-800 font-medium md:text-6xl md:mt-28 dark:text-teal-400">Badal Chowdhary</h2>
             <h3 className=" text-md py-2 md:text-2xl dark:text-gray-200">Software Engineer Fresher</h3>
             <p className=" text-sm py-5 leading-8 lg:leading-10 text-gray-800 md:text-xl max-w-2xl mx-auto dark:text-gray-200">
-            I'm Badal Chowdhary, a final year B.Tech student at IIT Gandhinagar. I am passionate about software development and engineering, and actively seeking opportunities in the software development industry, to apply my skills and knowledge to real-world challenges. 
+            I am Badal Chowdhary, a final year B.Tech student at IIT Gandhinagar. I am passionate about software development and engineering, and actively seeking opportunities in the software development industry, to apply my skills and knowledge to real-world challenges. 
             Here are my <a href="https://leetcode.com/badal_0503/" target="blank" className="text-cyan-800 font-medium font-mono dark:text-teal-400">Leetcode</a> and <a href="https://auth.geeksforgeeks.org/user/badalchorre0" target="blank" className="text-cyan-800 font-medium font-mono dark:text-teal-400">GFG</a> profiles.
             </p>
             
