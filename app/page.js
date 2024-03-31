@@ -8,11 +8,12 @@ import {AiFillLinkedin, AiFillGithub, AiFillMail, AiOutlineGlobal} from 'react-i
 import car from '../public/car.jpg'
 import { useState } from "react";
 
+
 import { projects } from "./data";
 
 
 export default function Home() {
-  const[darkMode, setDarkMode] = useState(false);
+  const[darkMode, setDarkMode] = useState(true);
 
   const handleClick = () => {
     setDarkMode(!darkMode);
@@ -23,38 +24,43 @@ export default function Home() {
         <title>Badal Chowdhary</title>
       </Head>
 
-      <main className=" bg-white px-10 md:px20 lg:px-40 dark:bg-gray-900">
+      <main className=" bg-white px-10 md:px20 lg:px-40 dark:bg-slate-900">
         {/* header */}
         <section className=" min-h-screen">
           <nav className=" py-10 mb-12 flex justify-between">
-            <h1 className=" text-xl font-burtons dark:text-gray-200">Badal Chowdhary</h1>
-            <ul className="flex justify-center">
+            <h1 className=" text-sm lg:text-2xl font-serif dark:text-gray-200">Badal Chowdhary</h1>
+            <ul className=" flex justify-center gap-6 lg:gap-20">
               <li className="dark:text-gray-200">
-                {darkMode? <BsSunFill onClick={handleClick} className=" cursor-pointer text-2xl"/> : <BsFillMoonStarsFill onClick={handleClick} className=" cursor-pointer text-2xl"/>}
+                {darkMode? <BsSunFill onClick={handleClick} className=" cursor-pointer text-sm mt-1 lg:text-2xl"/> : <BsFillMoonStarsFill onClick={handleClick} className=" cursor-pointer text-sm mt-1 lg:text-2xl text-cyan-800"/>}
               </li>
-              <li>
-                
+              <li className="dark:text-gray-200">
+                <a href="https://drive.google.com/file/d/1AEMWYrzNnD3k_7sBgMhQQAev846j_04H/view?usp=sharing" target="blank" className=" bg-cyan-800 text-gray-200 px-2 py-1 rounded-md text-sm lg:text-xl lg:px-4 lg:py-2 dark:bg-teal-400">
+                  Resume
+                </a>
               </li>
             </ul>
           </nav>
 
-          <div className=" text-center p-5 md:p-10">
-            <h2 className=" text-4xl mt-1 py-3 text-cyan-800 font-medium md:text-6xl md:mt-28">Badal Chowdhary</h2>
+          <div className=" text-center p-2 md:p-10 ">
+            <h2 className=" text-4xl mt-1 py-3 text-cyan-800 font-medium md:text-6xl md:mt-28 dark:text-teal-400">Badal Chowdhary</h2>
             <h3 className=" text-md py-2 md:text-2xl dark:text-gray-200">Software Engineer Fresher</h3>
-            <p className=" text-sm md:text-md py-5 leading-8 text-gray-800 md:text-xl max-w-2xl mx-auto dark:text-gray-200">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati quaerat aut delectus tempora sit labore? Doloremque cumque odio pariatur explicabo iusto debitis? Omnis possimus laboriosam rem rerum nesciunt consectetur odio.
+            <p className=" text-sm py-5 leading-8 lg:leading-10 text-gray-800 md:text-xl max-w-2xl mx-auto dark:text-gray-200">
+            I'm Badal Chowdhary, a final year B.Tech student at IIT Gandhinagar. I am passionate about software development and engineering, and actively seeking opportunities in the software development industry, to apply my skills and knowledge to real-world challenges. 
+            Here are my <a href="https://leetcode.com/badal_0503/" target="blank" className="text-cyan-800 font-medium font-mono dark:text-teal-400">Leetcode</a> and <a href="https://auth.geeksforgeeks.org/user/badalchorre0" target="blank" className="text-cyan-800 font-medium font-mono dark:text-teal-400">GFG</a> profiles.
             </p>
             
-            <div className=" text-l flex justify-center py-3 text-cyan-800 dark:text-gray-200 md:text-3xl md:gap-8">
-              {/* <AiFillGithub/>
-              <AiFillLinkedin/>
-              <AiFillMail/> */}
-              <a href="https://drive.google.com/file/d/1AEMWYrzNnD3k_7sBgMhQQAev846j_04H/view?usp=sharing" target="blank" className=" bg-cyan-500 text-white px-2 py-2 rounded-md ml-8">
-                Resume
+            <div className=" text-l gap-4 flex justify-center py-3 text-cyan-800 dark:text-teal-400 lg:text-3xl lg:gap-8 lg:py-10">
+              <a href="https://drive.google.com/file/d/1AEMWYrzNnD3k_7sBgMhQQAev846j_04H/view?usp=sharing" target="blank" >
+                <AiFillGithub/>
               </a>
-              <a href="https://drive.google.com/file/d/1oXpuSl9cER6oEJxzJDwgajwM1SMC7doZ/view?usp=sharing" target="blank" className=" bg-cyan-500 text-white px-4 py-2 rounded-md ml-8">
-                Connect
-            </a>
+              <a href="https://www.linkedin.com/in/badalchowdhary47/" target="blank" >
+                <AiFillLinkedin/>
+              </a>
+              <a href="mailto:badal.chowdhary@iitgn.ac.in" target="blank" >
+                <AiFillMail/>
+              </a>
+              
+              
             </div>
           </div>
           
@@ -63,88 +69,74 @@ export default function Home() {
           </div> */}
         </section>
 
-          {/* Projects */}
+          {/* Experience  and Education*/}
         <section>
-          <div>
-            <h3 className=" text-3xl py-1 dark:text-gray-200">Projects</h3>
-            <p className=" text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              <span className=" text-teal-500"> Highlight </span>Laboriosam commodi optio pariatur maiores adipisci necessitatibus nemo labore nesciunt esse architecto eveniet sequi non iure natus mollitia voluptate, et id veniam.
-            </p>
+          <div className=" py-2 lg:py-10 dark:text-gray-200">
+            <h3 className=" text-xl lg:text-3xl py-5 font-serif">Experience</h3>
+            <div className="flex justify-between px-5 lg:px-10 gap-5">
+              <h4 className=" text-sm lg:text-2xl underline"> Image Processing Intern , ESI</h4>
+              <h4 className=" py-2 text-xs lg:text-lg italic">May'23 - July'23</h4>
+            </div>
+            <div className="text-sm lg:text-lg lg:leading-8 py-2 px-8 lg:px-14 leading-8 text-gray-800 dark:text-gray-200">
+              <ul class="list-disc">
+                <li>Researched and studied image processing techniques, including Image Blurring, Image Thresholding, and Feature Extraction. Explored about depth estimation techniques including <span className=" text-cyan-800 dark:text-teal-400">  Depth from Focus and Depth from Defocus.</span></li>
+                <li>Performed the Depth From Focus depth estimation technique and validated on over 8+ image sets having different objects, achieving precise depth estimates for objects within a 30-40 cm range.</li>
+              </ul>
+            </div>
           </div>
 
-          <div className="lg:flex gap-10">
+          <div className=" py-2 lg:py-10 dark:text-gray-200">
+            <h3 className=" text-xl lg:text-3xl py-5 font-serif">Education</h3>
+            <div className="flex justify-between px-5 lg:px-10 gap-5">
+              <h4 className=" text-sm lg:text-2xl underline"> IIT Gandhhinagar</h4>
+              <h4 className=" py-2 text-xs lg:text-lg italic">2020 - 2024</h4>
+            </div>
+            <p className="text-sm lg:text-lg lg:leading-8 py-2 px-5 lg:px-10 leading-8 text-gray-800 dark:text-gray-200">
+              B.Tech in Materials Science and Engineering with <span className=" text-cyan-800 dark:text-teal-400">Minors in Computer Science and Engineering</span>.
+            </p>
+          </div>
+          
+        </section>
+
+
+          {/* Projects */}
+        <section>
+          <div className=" py-2 lg:py-10 dark:text-gray-200">
+            <h3 className=" text-xl lg:text-3xl py-5 font-serif">Projects</h3>
+            {/* <p className=" text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              <span className=" text-teal-500"> Highlight </span>Laboriosam commodi optio pariatur maiores adipisci necessitatibus nemo labore nesciunt esse architecto eveniet sequi non iure natus mollitia voluptate, et id veniam.
+            </p> */}
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2  lg:gap-20">
             {projects.map((item) => (
               <div key={item.id}>
-                <div className=" text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
-              <Image src={car} width={100} height={100} />
-              <h3 className=" text-lg font-medium pt-8 pb-2 text-teal-600">{item.title}</h3>
-              <p className="py-3">
-                {item.desc}
-              </p>
-              <span className=" py-4 text-teal-600">Tech Stack : </span>
-              <span>{item.stack}</span>
-              <div className=" text-3xl flex justify-center gap-10 py-5 text-gray-600">
-                <a href={item.githubLink} target="_blank" rel="noopener noreferrer">
-                  <AiFillGithub />
-                </a>
-                {item.webLink && <a href={item.webLink} target="_blank" rel="noopener noreferrer">
-                  <AiOutlineGlobal />
-                </a>}
-              </div>
-            </div>
+                <div className=" text-center shadow-xl p-5 lg:p-10 rounded-xl my-10 flex-1 dark:bg-slate-800 dark:shadow-xl dark:shadow-slate-900">
+                  {/* <Image src={item.img} width={100} height={100} alt={item.title}/> */}
+                  <h3 className=" text-sm lg:text-xl lg:mb-5 font-medium pt-8 pb-2 text-cyan-800 dark:text-teal-400">{item.title}</h3>
+                  <p className="py-3 text-xs lg:text-lg leading-6 lg:leading-8 lg:mb-5 dark:text-gray-200">
+                    {item.desc}
+                  </p>
+                  <span className=" py-4 text-cyan-800 text-xs lg:text-lg dark:text-teal-400">Tech Stack : </span>
+                  <span className="text-xs lg:text-lg leading-6 lg:leading-8 dark:text-gray-200">{item.stack}</span>
+                  <div className=" text-xl gap-6 lg:text-3xl flex justify-center lg:gap-10 py-5 lg:pt-10 text-cyan-800 dark:text-teal-400">
+                    <a href={item.githubLink} target="_blank" rel="noopener noreferrer">
+                      <AiFillGithub />
+                    </a>
+                    {item.webLink && <a href={item.webLink} target="_blank" rel="noopener noreferrer">
+                      <AiOutlineGlobal />
+                    </a>}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Experience  and Education*/}
-        <section>
-          <div>
-            <h3 className="text-3xl py-1">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800">
-              Lorem ipsum dolor sit amet <span className=" text-teal-500"> ABCD </span>consectetur, adipisicing elit. Sed quaerat cum rem at! Reprehenderit provident earum adipisci temporibus quidem accusamus magnam laudantium, animi consequatur molestias, odit beatae quae cumque minima?
-            </p>
-          </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className=" basis-1/3 flex-1">
-              <Image src={car} className="rounded-lg object-cover" width={'100'} height={'100%'} layout="responsive"/>
-            </div>
-            <div className=" basis-1/3 flex-1">
-              <Image src={car} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-            </div>
-            <div className=" basis-1/3 flex-1">
-              <Image src={car} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-            </div>
-            <div className=" basis-1/3 flex-1">
-              <Image src={car} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-            </div>
-            <div className=" basis-1/3 flex-1">
-              <Image src={car} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-            </div>
-            <div className=" basis-1/3 flex-1">
-              <Image src={car} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-            </div>
-          </div>
-        </section>
+        
 
-       {/* Footer */}
       </main>
-      <section className=" bg-teal-600">
-          <nav className=" p-10 flex justify-between">
-            <h1 className=" text-xl font-burtons dark:text-gray-200">Badal Chowdhary</h1>
-            <ul className="flex justify-center">
-              <li className="dark:text-gray-200">
-                <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" cursor-pointer text-2xl"/>
-              </li>
-              <li>
-                <a href="#" className=" bg-cyan-500 text-white px-4 py-2 rounded-md ml-8">
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
-          </section>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 export const projects = [
     {
         id: 1,
-        img: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A678%2F0*kxPYwfJmkXZ3iCWy.png&tbnid=INNC8jZSUNgFqM&vet=12ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy..i&imgrefurl=https%3A%2F%2Filolo.medium.com%2Funderstanding-the-mern-stack-for-full-stack-development-d8c6978b5ecb&docid=SxQZC2neo9uZGM&w=678&h=370&q=mern%20stack%20image&ved=2ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy",
+        img: "https://drive.google.com/file/d/1XNQw4KFCsF1sJhFdQPKGQfCAEu7-3cno/view?usp=drive_link",
         title: "BookishWear",
         desc: "Designed and developed an eCommerce platform for a book-themed clothing store.",
         stack: "React, NodeJs, ExpressJs, MongoDB, Redux",
