@@ -75,7 +75,7 @@ export default function Home() {
             <h3 className=" text-xl lg:text-3xl py-5 font-serif">Experience</h3>
             <div className="flex justify-between px-5 lg:px-10 gap-5">
               <h4 className=" text-sm lg:text-2xl underline"> Image Processing Intern , ESI</h4>
-              <h4 className=" py-2 text-xs lg:text-lg italic">May'23 - July'23</h4>
+              <h4 className=" py-2 text-xs lg:text-lg italic">May23 - July23</h4>
             </div>
             <div className="text-sm lg:text-lg lg:leading-8 py-2 px-8 lg:px-14 leading-8 text-gray-800 dark:text-gray-200">
               <ul class="list-disc">
