@@ -10,6 +10,15 @@ export const projects = [
     },
     {
         id: 2,
+        img: "https://drive.google.com/file/d/1XNQw4KFCsF1sJhFdQPKGQfCAEu7-3cno/view?usp=drive_link",
+        title: "Pathfinder",
+        desc: "Pathfinder is a pathfinding project which uses Dijkstra's Algorithm to find the shortest path.",
+        stack: "React, Javascript",
+        githubLink: "https://github.com/badalchowdhary/Pathfinder",
+        webLink: "https://pathfinder-badal-chowdharys-projects.vercel.app/",
+    },
+    {
+        id: 3,
         img: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A678%2F0*kxPYwfJmkXZ3iCWy.png&tbnid=INNC8jZSUNgFqM&vet=12ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy..i&imgrefurl=https%3A%2F%2Filolo.medium.com%2Funderstanding-the-mern-stack-for-full-stack-development-d8c6978b5ecb&docid=SxQZC2neo9uZGM&w=678&h=370&q=mern%20stack%20image&ved=2ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy",
         title: "NEEV Management System",
         desc: "Designed and developed database management system using SQL for NEEV.",
@@ -18,7 +27,7 @@ export const projects = [
         webLink: "",
     },
     {
-        id: 3,
+        id: 4,
         img: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A678%2F0*kxPYwfJmkXZ3iCWy.png&tbnid=INNC8jZSUNgFqM&vet=12ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy..i&imgrefurl=https%3A%2F%2Filolo.medium.com%2Funderstanding-the-mern-stack-for-full-stack-development-d8c6978b5ecb&docid=SxQZC2neo9uZGM&w=678&h=370&q=mern%20stack%20image&ved=2ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy",
         title: "Image Analysis of Plant Based Meat Products",
         desc: "Carried out research about Image and Texture Analysis of plant based meat products analogues.",
@@ -27,7 +36,7 @@ export const projects = [
         webLink: "",
     },
     {
-        id: 4,
+        id: 5,
         img: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A678%2F0*kxPYwfJmkXZ3iCWy.png&tbnid=INNC8jZSUNgFqM&vet=12ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy..i&imgrefurl=https%3A%2F%2Filolo.medium.com%2Funderstanding-the-mern-stack-for-full-stack-development-d8c6978b5ecb&docid=SxQZC2neo9uZGM&w=678&h=370&q=mern%20stack%20image&ved=2ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy",
         title: "House Price Prediction",
         desc: "Developed a machine learning model to predict the house prices in India.",
@@ -36,7 +45,7 @@ export const projects = [
         webLink: "",
     },
     {
-        id: 5,
+        id: 6,
         img: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A678%2F0*kxPYwfJmkXZ3iCWy.png&tbnid=INNC8jZSUNgFqM&vet=12ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy..i&imgrefurl=https%3A%2F%2Filolo.medium.com%2Funderstanding-the-mern-stack-for-full-stack-development-d8c6978b5ecb&docid=SxQZC2neo9uZGM&w=678&h=370&q=mern%20stack%20image&ved=2ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy",
         title: "PDC Website",
         desc: "Designed and developed the website of PDC council as a part of Hackrush'23.",
@@ -45,7 +54,7 @@ export const projects = [
         webLink: "https://badalchowdhary.github.io/hackrush-23_pdc-website/",
     },
     {
-        id: 6,
+        id: 7,
         img: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A678%2F0*kxPYwfJmkXZ3iCWy.png&tbnid=INNC8jZSUNgFqM&vet=12ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy..i&imgrefurl=https%3A%2F%2Filolo.medium.com%2Funderstanding-the-mern-stack-for-full-stack-development-d8c6978b5ecb&docid=SxQZC2neo9uZGM&w=678&h=370&q=mern%20stack%20image&ved=2ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy",
         title: "CashWise",
         desc: "Developed a flutter application to track day-to-day expenses of a user.",
@@ -54,7 +63,7 @@ export const projects = [
         webLink: "",
     },
     {
-        id: 7,
+        id: 8,
         img: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A678%2F0*kxPYwfJmkXZ3iCWy.png&tbnid=INNC8jZSUNgFqM&vet=12ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy..i&imgrefurl=https%3A%2F%2Filolo.medium.com%2Funderstanding-the-mern-stack-for-full-stack-development-d8c6978b5ecb&docid=SxQZC2neo9uZGM&w=678&h=370&q=mern%20stack%20image&ved=2ahUKEwjY-a7D3fCEAxXrxjgGHYiMAugQMygBegQIARBy",
         title: "CipherSafe",
         desc: "Developed a flutter application where users can store their login credentials for different websites and apps.",
