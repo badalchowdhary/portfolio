@@ -23,7 +23,7 @@ export const projects = [
         title: "NEEV Management System",
         desc: "Designed and developed database management system using SQL for NEEV.",
         stack: "SQL",
-        githubLink: "https://github.com/badalchowdhary/NEEV_sql",
+        githubLink: "https://github.com/badalchowdhary/Neev-webapplication",
         webLink: "",
     },
     {
