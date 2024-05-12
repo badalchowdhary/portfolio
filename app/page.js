@@ -50,7 +50,7 @@ export default function Home() {
             </p>
             
             <div className=" text-l gap-4 flex justify-center py-3 text-cyan-800 dark:text-teal-400 lg:text-3xl lg:gap-8 lg:py-10">
-              <a href="https://drive.google.com/file/d/1AEMWYrzNnD3k_7sBgMhQQAev846j_04H/view?usp=sharing" target="blank" >
+              <a href="https://github.com/badalchowdhary" target="blank" >
                 <AiFillGithub/>
               </a>
               <a href="https://www.linkedin.com/in/badalchowdhary47/" target="blank" >
