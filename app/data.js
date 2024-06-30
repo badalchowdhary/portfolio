@@ -24,7 +24,7 @@ export const projects = [
         desc: "Designed and developed an eCommerce platform for a book-themed clothing store.",
         stack: "React, NodeJs, ExpressJs, MongoDB, Redux",
         githubLink: "https://github.com/badalchowdhary/bookishwear_v2",
-        webLink: "12345",
+        webLink: "https://bookishwear-client.vercel.app/",
     },
     {
         id: 4,
