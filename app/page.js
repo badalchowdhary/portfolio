@@ -34,7 +34,7 @@ export default function Home() {
                 {darkMode? <BsSunFill onClick={handleClick} className=" cursor-pointer text-sm mt-1 lg:text-2xl"/> : <BsFillMoonStarsFill onClick={handleClick} className=" cursor-pointer text-sm mt-1 lg:text-2xl text-cyan-800"/>}
               </li>
               <li className="dark:text-gray-200">
-                <a href="https://drive.google.com/file/d/1XoJ_3BacnUgic-aVmO6Gx4aDMfPr5fqR/view?usp=sharing" target="blank" className=" bg-cyan-800 text-gray-200 px-2 py-1 rounded-md text-sm lg:text-xl lg:px-4 lg:py-2 dark:bg-teal-400">
+                <a href="https://drive.google.com/file/d/1lNSd3kAwQ4mHXNPYqLCIxloJbh1PLEpp/view" target="blank" className=" bg-cyan-800 text-gray-200 px-2 py-1 rounded-md text-sm lg:text-xl lg:px-4 lg:py-2 dark:bg-teal-400">
                   Resume
                 </a>
               </li>
